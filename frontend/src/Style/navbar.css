@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Salsa', cursive;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .8);
+    color: rgb(255, 255, 255);
+    /* Created with https://www.css-gradient.com */
+    background: rgba(26, 43, 213, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(26, 43, 213, 1.0), rgba(68, 97, 136, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(26, 43, 213, 1.0), rgba(68, 97, 136, 1.0));
+    background: linear-gradient(to top, rgba(26, 43, 213, 1.0), rgba(68, 97, 136, 1.0));
+}
+
+
+
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo-nav {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-items: center;
+        padding: 10px;
+        margin-bottom: auto;
+}
+
+li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+a:hover {
+    color: rgb(137, 203, 221);
+}
+
+.show-links {
+    display: none;
+    text-align: center;
+    background-color: #1257b0;
+    position: fixed;
+    width: 200px;
+
+    right: 0;
+}
+
+.Button {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    margin-bottom: auto;
+}
+
+.button {
+    width: 80px;
+    border-radius: 15px;
+    border-color: turquoise;
+    color: rgb(0, 45, 128);
+    /* Created with https://www.css-gradient.com */
+    /* Created with https://www.css-gradient.com */
+    background: rgba(251, 254, 255, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(251, 254, 255, 1.0), rgba(180, 212, 229, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(251, 254, 255, 1.0), rgba(180, 212, 229, 1.0));
+    background: linear-gradient(to top, rgba(251, 254, 255, 1.0), rgba(180, 212, 229, 1.0));
+    margin: 5px;
+    padding: 8px;
+
+
+}
+
+
+
+@media (max-width: 750px) {
+    .nav {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .show-links {
+        display: block;
+    }
+}
